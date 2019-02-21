@@ -77,4 +77,16 @@ Table 1 - MSA Architecture Zones<br/>
 </i>
 </p>
 
+Consequently, an MSA-enabled digital architecture will closely resemble the architecture depicted in Figure 2 below. 
+
+![msa_enabled-da](/media/api_msa_msa_enabled-da.png)
+
+<p align="center">
+<i>
+Figure 2 - An MSA-enabled Digital Architecture<br/>
+</i>
+</p>
+
+
+
 
