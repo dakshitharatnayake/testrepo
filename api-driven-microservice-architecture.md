@@ -70,3 +70,11 @@ By considering the above facts, the holistic view of an MSA-enabled digital arch
 |Inner Architecture|Core Microservices - Microservices which purely contain business logic and data services.|
 |Outer Architecture|Utility Microservices - Includes integration microservices, micro-gateways, security token services, micro-brokers or any other micro-runtime.|
 |External Architecture|End-user applications, legacy systems and data, SaaS applications, partner systems, etc.|
+
+<p align="center">
+<i>
+Table 1 - MSA Architecture Zones<br/>
+</i>
+</p>
+
+
