@@ -7,7 +7,8 @@ Version Q1-2019<br/>
 </p>
 
 **_Author_**
-+ Dakshitha Ratnayake, Enterprise Architect - CTO Office <dakshitha@wso2.com>
++ Dakshitha Ratnayake, Enterprise Architect - CTO Office
+<dakshitha@wso2.com>
 
 
 > *Microservice Architecture (MSA) is an excellent approach to building decentralized systems. However, microservices are too granular when it comes to architecting larger systems and projects in the brownfield. Most enterprises follow a layered architecture with both Service-oriented Architecture (SOA) principles and MSA concepts by grouping the services or microservices into layers in the overall enterprise architecture. This approach makes each architecture layer a logically centralized set of shared components.*
@@ -15,7 +16,6 @@ Version Q1-2019<br/>
 > *This paper will introduce microservices and will predominantly discuss the layered approach for an API-driven MSA. It will introduce ways of gradually transitioning from a monolithic architecture to a layered MSA via the API gateway pattern using WSO2 middleware and recommended technologies. This paper will also briefly cover other reference architectures such as segmented architecture, which is a subpattern of layered architecture, and the alternative reference architecture known as cell-based architecture. This paper will only cover the request-response communication style for client-microservice communication and a separate paper will discuss the event-driven communication style.*  
 
 ## Table of Contents
-
 - 1.0 Introduction
 - 2.0 Microservice Architecture (MSA)	
   - 2.1 Key Characteristics
@@ -46,7 +46,6 @@ Version Q1-2019<br/>
 - References	
 
 ## 1.0 Introduction
-
 In an age when delivering great digital experiences is more important than ever,  business success lies in offering agile digital services with high customer satisfaction. There needs to be an alignment between the overall corporate strategy and the pursued digital initiatives in order to transform the core business architecture to a digital architecture. A digital architecture is one that fosters rapid integration of new technologies to fuel digital transformation. To elaborate, a digital architecture is composed of a stack of layers that support the business value chain. Underpinning it all is the technology layer, which encompasses the application, API management, security, analytics, integration, services and data layers, and core infrastructure.  
 
 ![digital_architecture](/media/api_msa_digital_architecture.png)
@@ -87,6 +86,24 @@ Figure 2 - An MSA-enabled Digital Architecture<br/>
 </i>
 </p>
 
+For this purpose, this paper will explain how to achieve an MSA-enabled digital architecture. It will also highlight the best practices of adopting an API-driven microservice architecture in order to build a digital architecture iteratively, whether it is completely greenfield or brownfield, and how the WSO2 product stack and its derivatives can help achieve these MSA goals. 
 
+## 2.0 Microservice Architecture (MSA)
+### 2.1 Key Characteristics
+MSA is an application architecture pattern in which a large application is broken down into many loosely-coupled microservices. The goal of microservices is to sufficiently decompose the application in order to facilitate agile application development and deployment.
 
+In contrast to a more classic monolithic application, in which everything is tightly-coupled and deployed as one big chunk, a microservice architecture tries to decouple all modules, where each service has its own unique and well-defined scope and runs in its own process. Each microservice should ideally own a single responsibility. By enabling small autonomous teams to develop, deploy and scale their respective services independently, microservices enable parallel development, thereby speeding up the production cycle significantly.
 
+MSA is an evolution of Service Oriented Architecture (SOA) and adopting an MSA is closely correlated with the use of DevOps and continuous integration and continuous delivery (CI/CD). Classic SOA is often implemented inside deployment monoliths and is more platform driven, while microservices must be independently deployable and therefore offer more flexibility in all dimensions. Cloud native microservices (microservices that exploit the advantages of cloud computing,  container packaging, and dynamic management) take the SOA concept to a new level where the cloud infrastructure enables services to be implemented and managed at scale. With Docker and Kubernetes providing effective ways to develop, deploy and manage microservices, developers can spin up countless services all at once, monitor the services and provide each service with the resources it needs. Each microservice can be deployed, upgraded, scaled and restarted independent of all the sibling services in the application. 
+
+|  |
+|--|
+|![monolithic_architecture](/media/api_msa_monolithic_architecture.png) <br> <p align="center"> <b>Monolithic Architecture </b> </p> ![microservice_architecture](/media/api_msa_msa_p2p.png)  <br> <p align="center"> <b>Microservice Architecture </b>|
+|
+
+<p align="center">
+<i>
+Figure 3 - Monolithic Architecture vs Microservice Architecture
+<br/>
+</i>
+</p>
